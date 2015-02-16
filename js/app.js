@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function($) {
   $('.ryu').mouseenter(function() {
     $('.ryu-still').hide();
     $('.ryu-ready').show();
@@ -29,7 +29,7 @@ $(document).ready(function() {
   })
 });
 
-$(document).keydown(function(e){
+jQuery(document).keydown(function(e){
     console.log(e+" button pressed")
     if(e.keyCode == 88){
         $('.ryu-ready').hide();
@@ -38,7 +38,7 @@ $(document).keydown(function(e){
     }
 });
 
-$(document).keyup(function(e){
+jQuery(document).keyup(function(e){
     console.log(e+" button pressed")
     if(e.keyCode == 88){
         $('.ryu-still').show();
