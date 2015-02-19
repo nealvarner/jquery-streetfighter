@@ -23,7 +23,6 @@ jQuery(document).ready(function($) {
 })
   .mouseup(function() {
     console.log('mouseup');
-    //ryu back to ready position
     $('.ryu-throwing').hide();
     $('ryu-ready').show();
   })
